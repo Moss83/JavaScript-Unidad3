@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        var dist = parseInt(prompt("Ingrese una distancia en metros: ", ""));
+        if (0 <= dist && dist < 1000){
+            document.write("A pie");
+        }
+        else if (1000 <= dist && dist < 10000) {
+            document.write("Bicicleta");
+        }
+        else if (10000 <= dist && dist < 30000){
+            document.write("Colectivo");
+        }
+        else if (30000 <= dist && dist < 100000){
+            document.write("Automovil");
+        }
+        else if (dist >= 100000){
+            document.write("Avion");
+        }
+        else{
+            document.write("Debe ingresar un valor entero positivo");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        function mayor(lista){
+            var grande = 0;
+            for (var i = 0; i < lista.length; i++){
+                if (lista[i] > grande){
+                    grande = lista[i];
+                }
+            }
+            return grande;
+        }
+
+        var miLista = [];
+        var n = parseInt(prompt("¿Cuantos números desea ingresar?", ""));
+        var x;
+        for(var i = 0; i < n; i++){
+            x = parseInt(prompt("Ingrese un numero"));
+            miLista.push(x);
+        }
+        document.write("El mayor número ingresado es el " + mayor(miLista));
+        
+    </script>
+</body>
+</html>
